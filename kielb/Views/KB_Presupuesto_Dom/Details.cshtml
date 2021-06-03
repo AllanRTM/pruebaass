@@ -1,0 +1,58 @@
+﻿@model kielb.Models.KB_Presupuesto_Dom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KB_Presupuesto_Dom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.checklist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.checklist)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

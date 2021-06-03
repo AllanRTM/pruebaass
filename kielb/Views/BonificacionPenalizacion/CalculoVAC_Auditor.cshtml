@@ -1,0 +1,260 @@
+﻿@*@model IEnumerable<kielb.Models.ClsConsultaAuditorVAC>*@
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*datatables*@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<link href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<style>
+    div.dt-buttons {
+        position: relative;
+        float: left;
+        margin-right: 1rem;
+    }
+</style>
+
+
+<h2 class="text-dark">Cálculo de cajero, vendedor o agente</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <form action="BonificacionPenalizacion/fitltrarLista" method="post">
+                        <div class="form-row mb-3">
+                            <div class="col-md-6">
+                                <label class="text-left">Empresa: </label>
+                                @Html.DropDownList("Emp_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Empresa---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-left">Sucursal: </label>
+                                @Html.DropDownList("Sucursal_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Sucursal---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label class="text-left">Mes: </label>
+                                @Html.DropDownList("Mes_ID", new SelectList(string.Empty, "Value", "Text"), "---Seleccione un mes---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-left">Año: </label>
+                                @Html.DropDownList("ID", new SelectList(string.Empty, "Value", "Text"), "---Seleccione un año---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 1.9rem;">
+                                <button class="btn btn-block btn-dark">Calcular</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-table mt-3">
+    <div class="table-responsive table-stripered ctable-hijo">
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>
+                        Período de análisis
+                    </th>
+                    <th>
+                        Cumplimiento de presupuesto mensual
+                    </th>
+                    <th>
+                        Comisión por ventas
+                    </th>
+                    <th>
+                        Cuadro básico A
+                    </th>
+                    <th>
+                        Cuadro básico B
+                    </th>
+                    <th>
+                        Cuadro básico C
+                    </th>
+                    <th>
+                        Total Comisión
+                    </th>
+                    <th>
+                        Consumo
+                    </th>
+                    <th>
+                        checklist
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @*@foreach (var item in Model)
+                {*@
+                    <tr>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.CASA)*@
+                            032020
+                        </td>
+                        <td>12%
+                            @*@Html.DisplayFor(modelItem => item.MES_ANALISIS)*@
+                        </td>
+                        <td>5%
+                            @*@Html.DisplayFor(modelItem => item.COD_MATERIAL)*@
+                        </td>
+                        <td>3%
+                            @*@Html.DisplayFor(modelItem => item.MATERIAL)*@
+                        </td>
+                        <td>4%
+                            @*@Html.DisplayFor(modelItem => item.BONOS)*@
+                        </td>
+                        <td>6%
+                            @*@Html.DisplayFor(modelItem => item.COMPRAS)*@
+                        </td>
+                        <td>14%
+                            @*@Html.DisplayFor(modelItem => item.EXISTENCIA_MESES)*@
+                        </td>
+                        <td>17%
+                            @*@Html.DisplayFor(modelItem => item.OTRAS_ENT)*@
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Aplica
+                                </label>
+                            </div>
+                            @*@Html.DisplayFor(modelItem => item.OTRAS_SAL)*@
+                        </td>
+
+                    </tr>
+                @*}*@
+
+            </tbody>
+            @*<tfoot>
+                    <tr  class="font-weight-bold">
+                        <td colspan="5" class="text-right">Total general</td>
+                        <td colspan="3">$180</td>
+                    </tr>
+                </tfoot>*@
+        </table>
+
+    </div>
+</div>
+    </div>
+}
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+
+
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.colVis.min.js"></script>
+
+
+
+    @*para iniciar el datatable*@
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por página",
+                    "zeroRecords": "Datos no encontrados",
+                    "info": "Mostrando Página _PAGE_ de _PAGES_",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(Filtrado de _MAX_ registros totales)",
+                    "search": "Buscar",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                },
+                "dom": 'Bflrtip',
+                "buttons": [
+                    {
+                        extend: 'excel',
+                        className: 'btn btn-primary rounded-0',
+                        text: '<i class="far fa-file-excel"></i> Exportar a excel',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                            
+                        }
+                    },
+                ]
+            });
+        });
+
+    </script>
+
+
+    @*para llenar los selects*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Traer información de Empresa
+            $.getJSON('/KB_UsuariosKielsaBonos/GetEmpresas', function (data) {
+                $.each(data, function () {
+                    $('#Emp_id').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+            //Traer información de Centtos
+            $("#Emp_id").bind('click', function () {
+                var id = $('select[id=Emp_id]').val();
+                $('#Sucursal_id').empty();
+                $('#Sucursal_id').val('');
+
+                $.getJSON('/KB_UsuariosKielsaBonos/GetSuc', { emp_id: id }, function (data) {
+                    $.each(data, function () {
+                        $('#Sucursal_id').append('<option value=' +
+                            this.Value + '>' + this.Text + '</option>');
+                    });
+                });
+            });
+
+            // Traer información de los laboratorios
+            $.getJSON('/BonificacionPenalizacion/GetLab', function (data) {
+                $.each(data, function () {
+                    $('#Lab_ID').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+            // Traer información de los meses para el periodo
+            $.getJSON('/BonificacionPenalizacion/GetMeses', function (data) {
+                $.each(data, function () {
+                    $('#Mes_ID').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+            // Traer información de los años para el periodo
+            $.getJSON('/BonificacionPenalizacion/GetAnios', function (data) {
+                $.each(data, function () {
+                    $('#ID').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+        })
+    </script>
+}
+
+
+

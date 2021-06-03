@@ -1,0 +1,96 @@
+﻿@model kielb.Models.KB_Porcentajes
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>KB_Porcentajes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cumplimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cumplimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comision)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comision)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuadroA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuadroA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuadroB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuadroB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuadroC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuadroC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.consumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.consumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.checklist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.checklist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.año)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

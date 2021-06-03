@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "CargaChecklist";
+}
+
+<div class="container">
+    <div class="row mb-3">
+        <h2>Carga masiva de Checklist</h2>
+    </div>
+    <div class="card">
+        <div class="card-body mb-1">
+            @*<div class="form-row mb-3">
+                <div class="col-md-12">
+                    <p class="card-text">
+                        Seleccione un archivo para comenzar la carga masiva. El archivo seleccionado deberá tener la siguiente estructura: <br /><br />
+                        <strong>Código empleado</strong> (tipo número) <strong> | Nombre de empleado</strong> (tipo texto)<strong> | Monto </strong> (tipo flotante o decimal) <strong>  | Mes </strong> (tipo número)
+                    </p>
+                </div>
+
+            </div>*@
+            <form>
+                <div class="col-md-12">
+                    <div class="form-row">
+                        <div class="col-md-8">
+                            <input type="file" id="archivo" name="archivo" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-dark btn-block">Cargar datos</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+

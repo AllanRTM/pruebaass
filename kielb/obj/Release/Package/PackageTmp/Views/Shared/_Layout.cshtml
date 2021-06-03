@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title2 = "Bienvenido/a";
+    string userName = HttpContext.Current.User.Identity.Name;
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+<body>
+    @*para el header que solo lleva las imagenes*@
+    <header class="pt-4 pb-3 bg-primary">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-10">
+                <img src="@Url.Content("~/Images/logo_kielsa_blanco.png")" class="img-fluid ml-5 mb-3" alt="Responsive image" width='140px' />
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="ml-3 mt-2">
+                    <a class="float-left" href="@Url.Action("Dashboard", "Home")">
+                        <img src="@Url.Content("~/Images/logo2.png")" class="img-fluid mb-3" alt="Responsive image" width='140px' />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <a class="navbar-brand" href="@Url.Action("Dashboard", "Home")">@ViewBag.Title2, @userName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <a class="nav-link text-center" href="@Url.Action("About", "Home")">Integración de bono y deducciones</a></li> @*lleva un reporte*@
+                <li class="nav-item"> <a class="nav-link text-center" href="@Url.Action("Index", "FaltantesCaja")">Faltantes de caja</a></li>
+                <!--<li class="nav-item">
+                    <a class="nav-link text-center" href="#">Ajustes de inventario</a>--> @*llevará la asignación del inventario*@
+                <!--</li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reportes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="@Url.Action("Index", "AjustesInventario")">Faltantes de inventario</a>
+                        <a class="dropdown-item" href="@Url.Action("About", "Home")">Cobro dirigido</a>
+                        <a class="dropdown-item" href="@Url.Action("About", "Home")">No cobro</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Módulo de bonificación / penalización
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="@Url.Action("ConsultasAuditor", "BonificacionPenalizacion")">Consultas Auditor</a>
+                        <a class="dropdown-item" href="@Url.Action("ConsultasEmpleado", "BonificacionPenalizacion")">Consultas Empleado</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Módulo de carga de data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="@Url.Action("Index", "KB_PresupuestoTiendaMasivo")">Carga de presupuesto de tienda</a>
+                        <a class="dropdown-item" href="@Url.Action("Create", "KB_PresupuestoDomCargaMasiva")">Carga de presupuesto de domicilio</a>
+                        <a class="dropdown-item" href="@Url.Action("Index", "KB_EmpleadosCargaMasiva")">Carga empleados</a>
+                        @*<a class="dropdown-item" href="@Url.Action("CargaChecklist", "CargaData")">Carga checklist</a>*@
+                        <a class="dropdown-item" href="@Url.Action("Create", "KB_PorcentajesCargaMasiva")">Carga masiva de porcentaje de comisiones</a>
+                        @*<a class="dropdown-item" href="@Url.Action("CargaMantenimientoComisiones", "CargaData")">Mantenimiento de comisiones</a>*@
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="@Url.Action("Index", "KB_UsuariosKielsaBonos")">Mantenimiento de perfiles</a>
+                </li>
+            </ul>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-outline-danger btn-right mt-1" onclick="userLogOff()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+            }
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer class="footer bg-primary mt-3">
+        @*bg-footerKielsa*@
+        <section class="container pt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 class="text-white text-uppercase font-weigth bold"> Oficinas principales</h5>
+                    <div class="row">
+                        <div class="col-md-5 border-right">
+                            <p class="text-white">
+                                <b>Tegucigalpa, Honduras</b><br />
+                                Edificio Farinter, atrás de la Toyota, <br />
+                                Barrio La Granja <br />
+                                <b>Teléfono:  (+504) 2225-2718</b> <br />
+                                <b>FAX: (+504) 2225-2732</b>
+                            </p>
+                        </div>
+
+                        <div class="col-md-7">
+                            <p class="text-white">
+                                <b>San Pedro Sula, Honduras</b><br />
+                                Barrio Santa Rosa, segundo anillo periférico 7 y 8 calle SE. <br />
+                                Media cuadra al sur de la iglesia La Luz del Mundo <br />
+                                <b>Teléfono: (+504) 2553-5600</b>
+                            </p>
+                        </div>
+                    </div>
+                    @*<div class="row mt-3">
+                            <div class="col-md-5 border-bottom">
+                                <p class="text-white">
+                                    <b>Managua, Nicaragua.</b><br />
+                                    Plaza España o antigua Plaza El Retiro, de la Rotonda el<br /> Gueguense 20 metros al sur, Cubículo No. 12. Managua, Nicaragua.<br />
+                                    Barrio La Granja <br />
+                                    <b>PBX. 2251-2323</b> <br />
+                                    </p>
+                            </div>
+                        </div>*@
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-white text-uppercase font-weigth bold text-informacion">Contáctanos</h5>
+                            <a class="anchor text-white" href="mailto:info@farinter.hn">info@farinter.hn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center text-white">
+                        Copyright &copy; @DateTime.Now.Year <b>KIELSA Farmacéutica S.A Todos los Derechos Reservados.</b>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-left text-white">
+                        V1.0.0
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        function userLogOff() {
+            location.replace("/Home/Logout");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<kielb.Models.KB_UsuariosKielsaBonos>
+
+@{
+    ViewBag.Title = "Listado de usuarios";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Crear usuario", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Empresa
+        </th>
+        <th>
+            Sucursal
+        </th>
+        <th>
+            Estado
+        </th>
+        <th>
+            Rol
+        </th>
+        <th>
+            E-mail
+        </th>
+        <th>
+            Contraseña
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nombre)
+    </td>
+    <td>
+        Empresa1
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Sucursal_id)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.ID_Estado)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ID_Rol)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.pass)
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.Empleado_id }) |
+        @Html.ActionLink("Detalles", "Details", new { id = item.Empleado_id }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = item.Empleado_id })
+    </td>
+</tr>
+}
+
+</table>

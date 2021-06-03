@@ -1,0 +1,201 @@
+﻿@model kielb.Models.KB_UsuariosKielsaBonos
+
+@{
+    ViewBag.Title = "Crear usuarios";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-row">
+                            <label class="col-md-12 ml-2"><span class="badge badge-pill badge-secondary">1</span> Sucursal por país:</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*@Html.EditorFor(model => model.Sucursal_id, new { htmlAttributes = new { @class = "form-control" } })*@
+                                        @Html.DropDownList("Emp_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Empresa---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                                        @Html.ValidationMessageFor(model => model.Sucursal_id, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*@Html.EditorFor(model => model.Sucursal_id, new { htmlAttributes = new { @class = "form-control" } })*@
+                                        @Html.DropDownList("Sucursal_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Sucursal---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                                        @Html.ValidationMessageFor(model => model.Sucursal_id, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-row">
+                            <label class="col-md-12 ml-2"><span class="badge badge-pill badge-secondary">2</span> Datos del nuevo usuario:</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Empleado_id, new { htmlAttributes = new { @class = "form-control", @placeholder = "Id de empleado" } })
+                                        @Html.ValidationMessageFor(model => model.Empleado_id, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nombre del usuario" } })
+                                        @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.pass, new { htmlAttributes = new { @class = "form-control", @placeholder = "Contraseña a asignar" } })
+                                        @Html.ValidationMessageFor(model => model.pass, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Correo institucional" } })
+                                        @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-row">
+                            <label class="col-md-12 ml-2"><span class="badge badge-pill badge-secondary">3</span> Estado y rol:</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*@Html.EditorFor(model => model.ID_Estado, new { htmlAttributes = new { @class = "form-control" } })*@
+                                        @Html.DropDownList("ID_Estado", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Estado---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                                        @Html.ValidationMessageFor(model => model.ID_Estado, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @*@Html.EditorFor(model => model.ID_Rol, new { htmlAttributes = new { @class = "form-control" } })*@
+                                        @Html.DropDownList("ID_Rol", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Rol---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                                        @Html.ValidationMessageFor(model => model.ID_Rol, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.token_recovery, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.token_recovery, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.token_recovery, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Volver a lista de usuarios", "Index")
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Traer información de Empresa
+            $.getJSON('/KB_UsuariosKielsaBonos/GetEmpresas', function (data) {
+                $.each(data, function () {
+                    $('#Emp_id').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+            //Traer información de Centtos
+            $("#Emp_id").bind('click', function () {
+                var id = $('select[id=Emp_id]').val();
+                $('#Sucursal_id').empty();
+                $('#Sucursal_id').val('');
+
+                $.getJSON('/KB_UsuariosKielsaBonos/GetSuc', { emp_id: id }, function (data) {
+                    $.each(data, function () {
+                        $('#Sucursal_id').append('<option value=' +
+                            this.Value + '>' + this.Text + '</option>');
+                    });
+                });
+            });
+
+            // Traer información de estado
+            $.getJSON('/KB_UsuariosKielsaBonos/GetEstado', function (data) {
+                $.each(data, function () {
+                    $('#ID_Estado').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+            // Traer información de rol
+            $.getJSON('/KB_UsuariosKielsaBonos/GetRoles', function (data) {
+                $.each(data, function () {
+                    $('#ID_Rol').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+
+        })
+
+    </script>
+}
+

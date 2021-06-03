@@ -1,0 +1,81 @@
+﻿@model IEnumerable<kielb.Models.KB_Porcentajes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cumplimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comision)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cuadroA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cuadroB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cuadroC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.consumo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.checklist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.año)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cumplimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comision)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cuadroA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cuadroB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cuadroC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.consumo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.checklist)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.año)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

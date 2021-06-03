@@ -1,0 +1,430 @@
+﻿@model IEnumerable<kielb.Models.KB_BonoApp>
+@{ ViewBag.Title = "Consultas bono"; }
+
+<h2 class="text-primary">@ViewBag.Title</h2>
+
+@*datatables*@
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<link href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<style>
+    div.dt-buttons {
+        position: relative;
+        float: left;
+        margin-right: 1rem;
+    }
+</style>
+
+
+@ViewBag.Message
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            
+                            <div class="col-md-12 mb-3">
+                                <label class="col-md-12">Seleccione empresa:</label>
+                                @Html.Editor("Emp_id", new { htmlAttributes = new { @class = "form-control" } })
+                                @*@Html.DropDownList("Emp_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Empresa---", htmlAttributes: new { @class = "form-control", maxlength = 150 })*@
+                            </div>
+                        </div>
+                        @*<div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="col-md-12">Desde sucursal:</label>
+                                @Html.DropDownList("Sucursal_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione sucursal 1---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                            <div class="col-md-6">
+                                <label class="col-md-12">Hasta sucursal:</label>
+                                @Html.DropDownList("Sucursal_id2", new SelectList(string.Empty, "Value", "Text"), "---Seleccione sucursal n---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                            </div>
+                        </div>*@
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="text-left">Fecha inicial: </label>
+                                <input type="datetime-local" class="form-control" id="finicial" name="finicial" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-left">Fecha final: </label>
+                                <input type="datetime-local" class="form-control" id="ffinal" name="ffinal" />
+                            </div>
+                            @*<div class="col-md-4">
+                                    <label class="text-left">Tipo faltante: </label>
+                                    @Html.DropDownList("Tipo_id", new SelectList(string.Empty, "Value", "Text"), "---Seleccione Faltante---", htmlAttributes: new { @class = "form-control", maxlength = 150 })
+                                </div>*@
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-dark btn-block">Buscar información</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-table mt-3">
+        <div class="table-responsive table-stripered ctable-hijo">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>
+                            Sucursal Id
+                        </th>
+                        <th>
+                            Empleado Id
+                        </th>
+                        <th>
+                            Puesto
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Bono Total
+                        </th>
+                        <th>
+                            Faltante de Inventario
+                        </th>
+                        <th>
+                            Faltante de Caja
+                        </th>
+                        <th>
+                            Deduccion total
+                        </th>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Total
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.suc_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empleado_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.puesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bonoTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.faltInv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.faltCaja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.deduccion_total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+
+        </tr>}
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    @*Formulario modal agregado al 13052021*@
+    <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5" style="color: rebeccapurple;">Editar formulario</h4>
+                    <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">N° Id</label>
+                                <input type="text" id="formRequisaEdit" value="@(ViewBag.id ?? String.Empty)" class="form-control validate" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">Sucursal Id</label>
+                                <input type="text" id="formMATNREdit" class="form-control validate" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">Bodega id</label>
+                                <input type="text" id="formMAKTXEdit" class="form-control validate" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="formDisponibleEdit">Estado</label>
+                                <input type="text" id="formDisponibleEdit" class="form-control validate" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">Aplica</label>
+                                <input type="checkbox" id="formCostoEdit" class="form-control validate">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="md-form mb-5">
+                        <label data-error="wrong" data-success="right" for="formNameEdit">Comentario</label>
+                        <input type="text" id="formCantidadEdit" class="form-control validate">
+                    </div>
+
+
+                    @*<div class="md-form mb-5">
+                            <label data-error="wrong" data-success="right" for="formNameEdit">Unidad</label>
+                            <input type="text" id="formUnidadEdit" class="form-control validate" readonly>
+                        </div>*@
+                </div>
+                <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+                    <button class="btn btn-success btn-block editInside" data-dismiss="modal" id="Editar" onclick="return Editar();">
+                        Guardar
+                        <i class="fas fa-paper-plane-o ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*hasta aqui*@
+
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+
+
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.colVis.min.js"></script>
+
+
+
+    @*para iniciar el datatable*@
+    <script>
+    $(document).ready(function () {
+            $('#table_id').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por página",
+                    "zeroRecords": "Datos no encontrados",
+                    "info": "Mostrando Página _PAGE_ de _PAGES_",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(Filtrado de _MAX_ registros totales)",
+                    "search": "Buscar",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                },
+                "dom": 'Bflrtip',
+                "buttons": [
+                    {
+                        extend: 'excel',
+                        className: 'btn btn-primary rounded-0',
+                        text: '<i class="far fa-file-excel"></i> Exportar a excel',
+                        exportOptions: {
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                        }
+                    },
+                ]
+            });
+        });</script>
+
+
+    @*para llenar los selects*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Traer información de Empresa
+            $.getJSON('/KB_UsuariosKielsaBonos/GetEmpresas', function (data) {
+                $.each(data, function () {
+                    $('#Emp_id').append('<option value=' +
+                        this.Value + '>' + this.Text + '</option>');
+                });
+            });
+            //Traer información de sucursal
+            $("#Emp_id").bind('click', function () {
+                var id = $('select[id=Emp_id]').val();
+                $('#Sucursal_id').empty();
+                $('#Sucursal_id').val('');
+                $.getJSON('/AjustesInventario/GetSuc', { emp_id: id }, function (data) {
+                    $.each(data, function () {
+                        $('#Sucursal_id').append('<option value=' +
+                            this.Value + '>' + this.Text + '</option>');
+                    });
+                });
+            });
+            //Traer información de sucursal
+            $("#Emp_id").bind('click', function () {
+                var id = $('select[id=Emp_id]').val();
+                $('#Sucursal_id2').empty();
+                $('#Sucursal_id2').val('');
+                $.getJSON('/AjustesInventario/GetSuc', { emp_id: id }, function (data) {
+                    $.each(data, function () {
+                        $('#Sucursal_id2').append('<option value=' +
+                            this.Value + '>' + this.Text + '</option>');
+                    });
+                });
+            });
+            // Traer información de faltante
+            $("#Emp_id").bind('click', function () {
+                var id = $('select[id=Emp_id]').val();
+                $('#Tipo_id').empty();
+                $('#Tipo_id').val('');
+                $.getJSON('/AjustesInventario/GetFaltante', { emp_id: id }, function (data) {
+                    $.each(data, function () {
+                        $('#Tipo_id').append('<option value=' +
+                            this.Value + '>' + this.Text + '</option>');
+                    });
+                });
+            });
+        })
+
+
+         function Editar()
+            {
+                var MATNR = $("#formMATNREdit").val();
+                var Cantidad = Number($("#formCantidadEdit").val());
+                var MAKTX = $("#formMAKTXEdit").val();
+                var requisa = $("#formRequisaEdit").val();
+                var disponible = Number($("#formDisponibleEdit").val());
+                var costo = $("#formCostoEdit").val();
+                var unidad = $("#formUnidadEdit").val();
+
+                if (Cantidad == "" || Cantidad == null || Cantidad == 0) {
+                    swal({
+                        title: "Error alprocesar",
+                        text: "¡La cantidad debe tener un valor y debe ser distinto a cero! xx",
+                        icon: "error", //built in icons: success, warning, error, info
+                        timer: 5000, //timeOut for auto-close
+                    });
+                }
+                else
+                {
+                    var RequisaId = $("#RequisaId").val();
+                    //$("#formRequisaEdit").val(Requisa.trim());
+
+                    var Requisa_Descripcion = $("#Requisa_Descripcion").val();
+                    if (RequisaId == 0) {
+                        swal({
+                            title: "Error al procesar",
+                            text: "¡El campo N° de requisa debe contener un valor!",
+                            icon: "error", //built in icons: success, warning, error, info
+                            timer: 5000, //timeOut for auto-close
+                        });
+                    }
+                    else if (Requisa_Descripcion == "") {
+                        swal({
+                            title: "Error al procesar",
+                            text: "¡El campo descripcion requisa debe contener un valor!",
+                            icon: "error", //built in icons: success, warning, error, info
+                            timer: 5000, //timeOut for auto-close
+                        });
+                    }
+                    else
+                    {
+                        if (disponible >= Cantidad) {
+                            $.getJSON('/MaterialesAgregados/GetEdit2', { MATNR: MATNR, Cantidad: Cantidad, MAKTX: MAKTX, requisa: requisa, costo: costo, unidad: unidad}, function (data) {
+                                $.each(data, function () {
+                                    //$('#CeCoID').append('<option value=' +
+                                    //    this.Value + '>' + this.Text + '</option>');
+                                    if (this.Text == "Y") {
+                                        swal({
+                                            title: "Advertencia",
+                                            text: "¡El material ya ha sido agregado!",
+                                            icon: "warning", //built in icons: success, warning, error, info
+                                            timer: 5000, //timeOut for auto-close
+                                        });
+                                    }
+                                    else {
+                                        swal({
+                                            title: "Procesado",
+                                            text: "¡Material guardado correctamente...!",
+                                            icon: "success", //built in icons: success, warning, error, info
+                                            timer: 5000, //timeOut for auto-close
+                                        });
+                                    }
+                                });
+                            });
+                            //location.href = '@Url.Action("Edit", "MaterialesAgregados")?MATNR=' + MATNR + '&Cantidad=' + Cantidad + '&MAKTX=' + MAKTX + '&requisa=' + requisa;
+                        }
+                        else
+                        {
+                            swal({
+                                title: "Error al procesar",
+                                text: "¡La cantidad a registrar supera a lo disponible!",
+                                icon: "error", //built in icons: success, warning, error, info
+                                timer: 5000, //timeOut for auto-close
+                            });
+                        }
+                    }
+                }
+            }
+
+            $('#table_id tr').on('click', function () {
+                    var Requisa = $(this).find('td:nth-child(1)').html();
+                    var MATNR = $(this).find('td:nth-child(2)').html();
+                    var MAKTX = $(this).find('td:nth-child(3)').html();
+                    var disponible = $(this).find('td:nth-child(4)').html();
+                    var Cantidad = $(this).find('td:nth-child(5)').html();
+                    var costo = $(this).find('td:nth-child(6)').html();
+                    var unidad = $(this).find('td:nth-child(7)').html();
+
+                    //var RequisaId = $("#RequisaId").val();
+                    //$("#formRequisaEdit").val(Requisa.trim());
+                    $("#formMATNREdit").val(MATNR.trim());
+                    $("#formCantidadEdit").val(Cantidad.trim());
+                    $("#formMAKTXEdit").val(MAKTX.trim());
+                    $("#formDisponibleEdit").val(disponible.trim());
+                    $("#formCostoEdit").val(costo.trim());
+                    $("#formUnidadEdit").val(unidad.trim());
+            });
+
+
+
+
+    </script>
+}
+

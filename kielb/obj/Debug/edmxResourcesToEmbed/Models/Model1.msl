@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SITEPLUSModelStoreContainer" CdmEntityContainer="SITEPLUSEntities">
+    <EntitySetMapping Name="KB_Porcentajes">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Porcentajes">
+        <MappingFragment StoreEntitySet="KB_Porcentajes">
+          <ScalarProperty Name="suc_id" ColumnName="suc_id" />
+          <ScalarProperty Name="canje" ColumnName="canje" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cumplimiento" ColumnName="cumplimiento" />
+          <ScalarProperty Name="comision" ColumnName="comision" />
+          <ScalarProperty Name="cuadroA" ColumnName="cuadroA" />
+          <ScalarProperty Name="cuadroB" ColumnName="cuadroB" />
+          <ScalarProperty Name="cuadroC" ColumnName="cuadroC" />
+          <ScalarProperty Name="consumo" ColumnName="consumo" />
+          <ScalarProperty Name="checklist" ColumnName="checklist" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="año" ColumnName="año" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Presupuesto_Dom">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Presupuesto_Dom">
+        <MappingFragment StoreEntitySet="KB_Presupuesto_Dom">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="checklist" ColumnName="checklist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Presupuesto_Far">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Presupuesto_Far">
+        <MappingFragment StoreEntitySet="KB_Presupuesto_Far">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Suc_id" ColumnName="Suc_id" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="checklist" ColumnName="checklist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Mantenimiento_Perfiles_Y_Roles">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Mantenimiento_Perfiles_Y_Roles">
+        <MappingFragment StoreEntitySet="KB_Mantenimiento_Perfiles_Y_Roles">
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Id_rol" ColumnName="Id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_UsuariosKielsaBonos">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_UsuariosKielsaBonos">
+        <MappingFragment StoreEntitySet="KB_UsuariosKielsaBonos">
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="token_recovery" ColumnName="token_recovery" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ID_Rol" ColumnName="ID_Rol" />
+          <ScalarProperty Name="ID_Estado" ColumnName="ID_Estado" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="Sucursal_id" ColumnName="Sucursal_id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Estado_Uuarios">
+      <EntityTypeMapping TypeName="SITEPLUSModel.TBL_Estado_Uuarios">
+        <MappingFragment StoreEntitySet="TBL_Estado_Uuarios">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="ID_Estado" ColumnName="ID_Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_Empresas">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_Empresas">
+        <MappingFragment StoreEntitySet="VSP_Empresas">
+          <ScalarProperty Name="Emp_Nombre" ColumnName="Emp_Nombre" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_TR_SUCURSAL">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_TR_SUCURSAL">
+        <MappingFragment StoreEntitySet="VSP_TR_SUCURSAL">
+          <ScalarProperty Name="Suc_Nombre" ColumnName="Suc_Nombre" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Anios">
+      <EntityTypeMapping TypeName="SITEPLUSModel.TBL_Anios">
+        <MappingFragment StoreEntitySet="TBL_Anios">
+          <ScalarProperty Name="Anio" ColumnName="Anio" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MESES">
+      <EntityTypeMapping TypeName="SITEPLUSModel.TBL_MESES">
+        <MappingFragment StoreEntitySet="TBL_MESES">
+          <ScalarProperty Name="Nombre_mes" ColumnName="Nombre_mes" />
+          <ScalarProperty Name="Mes_ID" ColumnName="Mes_ID" />
+          <ScalarProperty Name="Id_num" ColumnName="Id_num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_KB_Vendedores_x_pais">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_KB_Vendedores_x_pais">
+        <MappingFragment StoreEntitySet="VSP_KB_Vendedores_x_pais">
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="Codigo_Interfaz" ColumnName="Codigo_Interfaz" />
+          <ScalarProperty Name="Vendedor_Activo" ColumnName="Vendedor_Activo" />
+          <ScalarProperty Name="Vendedor_Fec_Actualizacion" ColumnName="Vendedor_Fec_Actualizacion" />
+          <ScalarProperty Name="Vendedor_Nombre_Completo" ColumnName="Vendedor_Nombre_Completo" />
+          <ScalarProperty Name="Vendedor_Apellido2" ColumnName="Vendedor_Apellido2" />
+          <ScalarProperty Name="Vendedor_Apellido1" ColumnName="Vendedor_Apellido1" />
+          <ScalarProperty Name="Vendedor_Nombre" ColumnName="Vendedor_Nombre" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="Cadena_Id" ColumnName="Cadena_Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CalculoBono">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CalculoBono">
+        <MappingFragment StoreEntitySet="KB_CalculoBono">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="diferencia_N" ColumnName="diferencia_N" />
+          <ScalarProperty Name="total_bono" ColumnName="total_bono" />
+          <ScalarProperty Name="total_deduciones" ColumnName="total_deduciones" />
+          <ScalarProperty Name="falt_caja" ColumnName="falt_caja" />
+          <ScalarProperty Name="falt_inv" ColumnName="falt_inv" />
+          <ScalarProperty Name="monto_bono" ColumnName="monto_bono" />
+          <ScalarProperty Name="vendedor_id" ColumnName="vendedor_id" />
+          <ScalarProperty Name="puesto" ColumnName="puesto" />
+          <ScalarProperty Name="suc_id" ColumnName="suc_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CobroVendedor">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CobroVendedor">
+        <MappingFragment StoreEntitySet="KB_CobroVendedor">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="Mov_id" ColumnName="Mov_id" />
+          <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CuadroFaltINV">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CuadroFaltINV">
+        <MappingFragment StoreEntitySet="KB_CuadroFaltINV">
+          <ScalarProperty Name="costo_total" ColumnName="costo_total" />
+          <ScalarProperty Name="tipo_faltante" ColumnName="tipo_faltante" />
+          <ScalarProperty Name="tipo_cobro" ColumnName="tipo_cobro" />
+          <ScalarProperty Name="aplica" ColumnName="aplica" />
+          <ScalarProperty Name="Num_Mov" ColumnName="Num_Mov" />
+          <ScalarProperty Name="id_mov" ColumnName="id_mov" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fecha_aplicacion" ColumnName="fecha_aplicacion" />
+          <ScalarProperty Name="fecha_apertura" ColumnName="fecha_apertura" />
+          <ScalarProperty Name="bodega_id" ColumnName="bodega_id" />
+          <ScalarProperty Name="suc_id" ColumnName="suc_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_KB_DatosUsuarios">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_KB_DatosUsuarios">
+        <MappingFragment StoreEntitySet="VSP_KB_DatosUsuarios">
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Suc_Nombre" ColumnName="Suc_Nombre" />
+          <ScalarProperty Name="Emp_Nombre" ColumnName="Emp_Nombre" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="token_recovery" ColumnName="token_recovery" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ID_Rol" ColumnName="ID_Rol" />
+          <ScalarProperty Name="ID_Estado" ColumnName="ID_Estado" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="Sucursal_id" ColumnName="Sucursal_id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_KB_NombreFaltantes">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_KB_NombreFaltantes">
+        <MappingFragment StoreEntitySet="VSP_KB_NombreFaltantes">
+          <ScalarProperty Name="Tipo_Mov_Merma" ColumnName="Tipo_Mov_Merma" />
+          <ScalarProperty Name="Tipo_Fec_Actualizacion" ColumnName="Tipo_Fec_Actualizacion" />
+          <ScalarProperty Name="Tipo_Suma_Inventario" ColumnName="Tipo_Suma_Inventario" />
+          <ScalarProperty Name="Tipo_InterBodega" ColumnName="Tipo_InterBodega" />
+          <ScalarProperty Name="Tipo_Tipo_Movimiento" ColumnName="Tipo_Tipo_Movimiento" />
+          <ScalarProperty Name="Tipo_Estadistica" ColumnName="Tipo_Estadistica" />
+          <ScalarProperty Name="Tipo_Nombre" ColumnName="Tipo_Nombre" />
+          <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Calculo_Bono">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Calculo_Bono">
+        <MappingFragment StoreEntitySet="KB_Calculo_Bono">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="suc_id" ColumnName="suc_id" />
+          <ScalarProperty Name="puesto" ColumnName="puesto" />
+          <ScalarProperty Name="empleado_id" ColumnName="empleado_id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="FaltCaja" ColumnName="FaltCaja" />
+          <ScalarProperty Name="faltInv" ColumnName="faltInv" />
+          <ScalarProperty Name="checklist" ColumnName="checklist" />
+          <ScalarProperty Name="canje" ColumnName="canje" />
+          <ScalarProperty Name="consumo" ColumnName="consumo" />
+          <ScalarProperty Name="cuadroC" ColumnName="cuadroC" />
+          <ScalarProperty Name="cuadroB" ColumnName="cuadroB" />
+          <ScalarProperty Name="cuadroA" ColumnName="cuadroA" />
+          <ScalarProperty Name="comision" ColumnName="comision" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CalculoFaltCaja">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CalculoFaltCaja">
+        <MappingFragment StoreEntitySet="KB_CalculoFaltCaja">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="fecha_doc" ColumnName="fecha_doc" />
+          <ScalarProperty Name="cliente_id" ColumnName="cliente_id" />
+          <ScalarProperty Name="vendedor_id" ColumnName="vendedor_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Empleados">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Empleados">
+        <MappingFragment StoreEntitySet="KB_Empleados">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="tipo_id" ColumnName="tipo_id" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Suc_id" ColumnName="Suc_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_TipoEmpleados">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_TipoEmpleados">
+        <MappingFragment StoreEntitySet="KB_TipoEmpleados">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_ConsultaNotas">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_ConsultaNotas">
+        <MappingFragment StoreEntitySet="KB_ConsultaNotas">
+          <ScalarProperty Name="CentroCosto" ColumnName="CentroCosto" />
+          <ScalarProperty Name="CtaContable" ColumnName="CtaContable" />
+          <ScalarProperty Name="Num_Nota" ColumnName="Num_Nota" />
+          <ScalarProperty Name="Nombre_Corto" ColumnName="Nombre_Corto" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="vendedor_nombre_completo" ColumnName="vendedor_nombre_completo" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Consumo">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Consumo">
+        <MappingFragment StoreEntitySet="KB_Consumo">
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="total_cuadro" ColumnName="total_cuadro" />
+          <ScalarProperty Name="Caja_Id" ColumnName="Caja_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="factura_id" ColumnName="factura_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CuadroBasicoA">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CuadroBasicoA">
+        <MappingFragment StoreEntitySet="KB_CuadroBasicoA">
+          <ScalarProperty Name="factura_fecha" ColumnName="factura_fecha" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="total_cuadro" ColumnName="total_cuadro" />
+          <ScalarProperty Name="Caja_Id" ColumnName="Caja_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="factura_id" ColumnName="factura_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CuadroBasicoB">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CuadroBasicoB">
+        <MappingFragment StoreEntitySet="KB_CuadroBasicoB">
+          <ScalarProperty Name="factura_fecha" ColumnName="factura_fecha" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="total_cuadro" ColumnName="total_cuadro" />
+          <ScalarProperty Name="Caja_Id" ColumnName="Caja_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="factura_id" ColumnName="factura_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_CuadroBasicoC">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_CuadroBasicoC">
+        <MappingFragment StoreEntitySet="KB_CuadroBasicoC">
+          <ScalarProperty Name="factura_fecha" ColumnName="factura_fecha" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="total_cuadro" ColumnName="total_cuadro" />
+          <ScalarProperty Name="Caja_Id" ColumnName="Caja_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="factura_id" ColumnName="factura_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_DatosUsuario">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_DatosUsuario">
+        <MappingFragment StoreEntitySet="KB_DatosUsuario">
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Suc_Nombre" ColumnName="Suc_Nombre" />
+          <ScalarProperty Name="Emp_Nombre" ColumnName="Emp_Nombre" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_Venta_total">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_Venta_total">
+        <MappingFragment StoreEntitySet="KB_Venta_total">
+          <ScalarProperty Name="factura_fecha" ColumnName="factura_fecha" />
+          <ScalarProperty Name="Vendedor_Id" ColumnName="Vendedor_Id" />
+          <ScalarProperty Name="total_cuadro" ColumnName="total_cuadro" />
+          <ScalarProperty Name="Caja_Id" ColumnName="Caja_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KB_VentaNeta">
+      <EntityTypeMapping TypeName="SITEPLUSModel.KB_VentaNeta">
+        <MappingFragment StoreEntitySet="KB_VentaNeta">
+          <ScalarProperty Name="Factura_Fecha" ColumnName="Factura_Fecha" />
+          <ScalarProperty Name="total_Venta" ColumnName="total_Venta" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_KB_perfilesKB">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_KB_perfilesKB">
+        <MappingFragment StoreEntitySet="VSP_KB_perfilesKB">
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Suc_Nombre" ColumnName="Suc_Nombre" />
+          <ScalarProperty Name="Emp_Nombre" ColumnName="Emp_Nombre" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="token_recovery" ColumnName="token_recovery" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ID_Rol" ColumnName="ID_Rol" />
+          <ScalarProperty Name="ID_Estado" ColumnName="ID_Estado" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="Sucursal_id" ColumnName="Sucursal_id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Empleado_id" ColumnName="Empleado_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VSP_KB_TipoFaltantes_X_Pais">
+      <EntityTypeMapping TypeName="SITEPLUSModel.VSP_KB_TipoFaltantes_X_Pais">
+        <MappingFragment StoreEntitySet="VSP_KB_TipoFaltantes_X_Pais">
+          <ScalarProperty Name="Resolucion_Punto_Emision" ColumnName="Resolucion_Punto_Emision" />
+          <ScalarProperty Name="Resolucion_Establecimiento" ColumnName="Resolucion_Establecimiento" />
+          <ScalarProperty Name="Resolucion_Fec_Vencimiento" ColumnName="Resolucion_Fec_Vencimiento" />
+          <ScalarProperty Name="Resolucion_Tipo_Comprobante_FE" ColumnName="Resolucion_Tipo_Comprobante_FE" />
+          <ScalarProperty Name="Resolucion_Doc_Final" ColumnName="Resolucion_Doc_Final" />
+          <ScalarProperty Name="Resolucion_Doc_Inicio" ColumnName="Resolucion_Doc_Inicio" />
+          <ScalarProperty Name="Resolucion_Fecha" ColumnName="Resolucion_Fecha" />
+          <ScalarProperty Name="Resolucion_id" ColumnName="Resolucion_id" />
+          <ScalarProperty Name="Serie_id" ColumnName="Serie_id" />
+          <ScalarProperty Name="Mov_Numero" ColumnName="Mov_Numero" />
+          <ScalarProperty Name="Mov_Origen" ColumnName="Mov_Origen" />
+          <ScalarProperty Name="Asiento_Recibido_Id" ColumnName="Asiento_Recibido_Id" />
+          <ScalarProperty Name="Orden_Id" ColumnName="Orden_Id" />
+          <ScalarProperty Name="Asiento_id" ColumnName="Asiento_id" />
+          <ScalarProperty Name="Mov_Subtotal_Ant_Dolar" ColumnName="Mov_Subtotal_Ant_Dolar" />
+          <ScalarProperty Name="Mov_Subtotal_Dolar" ColumnName="Mov_Subtotal_Dolar" />
+          <ScalarProperty Name="Mov_Usuario_Recibe" ColumnName="Mov_Usuario_Recibe" />
+          <ScalarProperty Name="Mov_Usuario_Anula" ColumnName="Mov_Usuario_Anula" />
+          <ScalarProperty Name="Mov_Usuario_Aplica" ColumnName="Mov_Usuario_Aplica" />
+          <ScalarProperty Name="Mov_Aplicar_Consignacion" ColumnName="Mov_Aplicar_Consignacion" />
+          <ScalarProperty Name="Mov_Interbodega" ColumnName="Mov_Interbodega" />
+          <ScalarProperty Name="Mov_Utilizado" ColumnName="Mov_Utilizado" />
+          <ScalarProperty Name="Mov_Estado" ColumnName="Mov_Estado" />
+          <ScalarProperty Name="Mov_Comentario" ColumnName="Mov_Comentario" />
+          <ScalarProperty Name="Mov_Precio_Total" ColumnName="Mov_Precio_Total" />
+          <ScalarProperty Name="Mov_Total" ColumnName="Mov_Total" />
+          <ScalarProperty Name="Mov_Subtotal" ColumnName="Mov_Subtotal" />
+          <ScalarProperty Name="Mov_Fecha_Recibido" ColumnName="Mov_Fecha_Recibido" />
+          <ScalarProperty Name="Mov_Fecha_Ingreso" ColumnName="Mov_Fecha_Ingreso" />
+          <ScalarProperty Name="Mov_Fecha_Impreso" ColumnName="Mov_Fecha_Impreso" />
+          <ScalarProperty Name="Mov_Fecha_Despachado" ColumnName="Mov_Fecha_Despachado" />
+          <ScalarProperty Name="Mov_Fecha_Anulado" ColumnName="Mov_Fecha_Anulado" />
+          <ScalarProperty Name="Mov_Fecha_Aplicado" ColumnName="Mov_Fecha_Aplicado" />
+          <ScalarProperty Name="Mov_Fecha" ColumnName="Mov_Fecha" />
+          <ScalarProperty Name="Mov_Tipo_Ajuste" ColumnName="Mov_Tipo_Ajuste" />
+          <ScalarProperty Name="Bodega_Destino" ColumnName="Bodega_Destino" />
+          <ScalarProperty Name="Suc_Destino" ColumnName="Suc_Destino" />
+          <ScalarProperty Name="Usuario_Id" ColumnName="Usuario_Id" />
+          <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+          <ScalarProperty Name="Mov_Id" ColumnName="Mov_Id" />
+          <ScalarProperty Name="Bodega_Id" ColumnName="Bodega_Id" />
+          <ScalarProperty Name="Suc_Id" ColumnName="Suc_Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

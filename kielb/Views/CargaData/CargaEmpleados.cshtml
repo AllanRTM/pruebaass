@@ -1,0 +1,49 @@
+﻿@model kielb.Models.KB_Empleados
+
+@{
+    ViewBag.Title = "CargaEmpleados";
+}
+
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.Message
+    </div>
+}
+@using (Html.BeginForm("CargaEmpleados", "CargaData", FormMethod.Post, new { enctype = "Multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+
+<div class="form-horizontal">
+    <h4>Carga masiva de Empleados</h4>
+    <hr />
+    <div class="col-md-12">
+        <p class="card-text">
+            Seleccione un archivo para comenzar la carga masiva. El archivo seleccionado deberá tener la siguiente estructura: <br /><br />
+            <strong>ID</strong> (tipo número) <strong> | Nombre de farmacia</strong> (tipo texto)<strong> | Monto </strong>Código empleado<strong> (tipo número) </strong> | Nombre de empleado<strong> (tipo texto) </strong>Código supervisor<strong> (tipo número) </strong> | Nombre de supervisor<strong> (tipo texto)</strong>
+</p>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ruta, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.ruta, new { Type = "file", accept = ".xlsx" })
+
+            @Html.ValidationMessageFor(model => model.ruta, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+
+</div>
+
+}
+
+
+

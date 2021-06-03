@@ -1,0 +1,520 @@
+C:\Users\altorres\Documents\GitHub\kielb\bin\kielb.dll.config
+C:\Users\altorres\Documents\GitHub\kielb\bin\kielb.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\kielb.pdb
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csc.exe
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csc.exe.config
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csc.rsp
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csi.exe
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csi.exe.config
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\csi.rsp
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.AppContext.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Console.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.IO.Compression.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Net.Http.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.ValueTuple.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\vbc.exe
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\vbc.exe.config
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\vbc.rsp
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\VBCSCompiler.exe
+C:\Users\altorres\Documents\GitHub\kielb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\altorres\Documents\GitHub\kielb\bin\Antlr3.Runtime.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\EntityFramework.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\EntityFramework.SqlServer.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\Newtonsoft.Json.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Helpers.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Mvc.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Optimization.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Razor.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.Razor.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\WebGrease.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\EntityFramework.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\EntityFramework.SqlServer.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Helpers.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Mvc.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Optimization.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.Razor.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\System.Web.WebPages.Razor.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\Newtonsoft.Json.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\Antlr3.Runtime.pdb
+C:\Users\altorres\Documents\GitHub\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.Razor.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\altorres\Documents\GitHub\kielb\obj\Debug\kielb.csprojAssemblyReference.cache
+C:\Users\altorres\Documents\GitHub\kielb\obj\Debug\kielb.csproj.CoreCompileInputs.cache
+C:\Users\altorres\Documents\GitHub\kielb\obj\Debug\kielb.csproj.CopyComplete
+C:\Users\altorres\Documents\GitHub\kielb\obj\Debug\kielb.dll
+C:\Users\altorres\Documents\GitHub\kielb\obj\Debug\kielb.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\obj\Debug\kielb.csprojAssemblyReference.cache
+C:\Users\altorres\Desktop\2do actualizado\kielb\obj\Debug\kielb.csproj.CoreCompileInputs.cache
+C:\Users\altorres\Desktop\2do actualizado\kielb\obj\Debug\kielb.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\obj\Debug\kielb.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\kielb.dll.config
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\kielb.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\kielb.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csc.exe
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csc.exe.config
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csc.rsp
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csi.exe
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csi.exe.config
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\csi.rsp
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.AppContext.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Console.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.IO.Compression.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Net.Http.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.ValueTuple.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\vbc.exe
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\vbc.exe.config
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\vbc.rsp
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\VBCSCompiler.exe
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Antlr3.Runtime.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\DocumentFormat.OpenXml.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\EntityFramework.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\EntityFramework.SqlServer.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.DataSet.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Newtonsoft.Json.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\SpreadsheetLight.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Drawing.Common.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.IO.Packaging.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Helpers.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Mvc.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Optimization.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Razor.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.Razor.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\WebGrease.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\DocumentFormat.OpenXml.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\EntityFramework.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\EntityFramework.SqlServer.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.DataSet.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\ExcelDataReader.DataSet.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\SpreadsheetLight.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.IO.Packaging.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Helpers.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Mvc.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Optimization.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.Razor.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\System.Web.WebPages.Razor.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Newtonsoft.Json.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Antlr3.Runtime.pdb
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.Razor.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\altorres\Desktop\2do actualizado\kielb\obj\Debug\kielb.csproj.CopyComplete
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\kielb.dll.config
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\kielb.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\kielb.pdb
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csc.exe
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csc.exe.config
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csc.rsp
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csi.exe
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csi.exe.config
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\csi.rsp
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.AppContext.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Console.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.IO.Compression.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Net.Http.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.ValueTuple.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\vbc.exe
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\vbc.exe.config
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\vbc.rsp
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\VBCSCompiler.exe
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Antlr3.Runtime.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\DocumentFormat.OpenXml.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\EntityFramework.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\EntityFramework.SqlServer.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.DataSet.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Newtonsoft.Json.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\SpreadsheetLight.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Drawing.Common.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.IO.Packaging.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Helpers.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Mvc.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Optimization.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Razor.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.Razor.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\WebGrease.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\DocumentFormat.OpenXml.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\EntityFramework.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\EntityFramework.SqlServer.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.pdb
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.DataSet.pdb
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\ExcelDataReader.DataSet.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\SpreadsheetLight.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.IO.Packaging.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Helpers.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Mvc.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Optimization.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.Razor.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\System.Web.WebPages.Razor.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Newtonsoft.Json.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Antlr3.Runtime.pdb
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.Razor.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\obj\Debug\kielb.csprojAssemblyReference.cache
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\obj\Debug\kielb.csproj.CoreCompileInputs.cache
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\obj\Debug\kielb.csproj.CopyComplete
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\obj\Debug\kielb.dll
+C:\Users\KISLEV.BECKER\Desktop\KielsaBonos\kielb\obj\Debug\kielb.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\kielb.dll.config
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\kielb.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\kielb.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csc.exe
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csc.exe.config
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csc.rsp
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csi.exe
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csi.exe.config
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\csi.rsp
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.AppContext.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Console.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.IO.Compression.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Net.Http.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.ValueTuple.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\vbc.exe
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\vbc.exe.config
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\vbc.rsp
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\VBCSCompiler.exe
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Antlr3.Runtime.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\DocumentFormat.OpenXml.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\EntityFramework.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\EntityFramework.SqlServer.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Newtonsoft.Json.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\SpreadsheetLight.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Drawing.Common.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.IO.Packaging.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Helpers.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Mvc.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Optimization.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Razor.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.Razor.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\WebGrease.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\DocumentFormat.OpenXml.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\EntityFramework.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\EntityFramework.SqlServer.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\SpreadsheetLight.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.IO.Packaging.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Helpers.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Mvc.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Optimization.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.Razor.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Web.WebPages.Razor.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Newtonsoft.Json.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Antlr3.Runtime.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.Razor.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\obj\Debug\kielb.csprojAssemblyReference.cache
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\obj\Debug\kielb.csproj.CoreCompileInputs.cache
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\obj\Debug\kielb.csproj.CopyComplete
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\obj\Debug\kielb.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\obj\Debug\kielb.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Stripe.net.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Stripe.net.pdb
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\Stripe.net.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\altorres\Desktop\KielsaBono-main final\KielsaBono-main\kielb\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\kielb.dll.config
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\kielb.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\kielb.pdb
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csc.exe
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csc.exe.config
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csc.rsp
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csi.exe
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csi.exe.config
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\csi.rsp
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.AppContext.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Console.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.IO.Compression.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Net.Http.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.ValueTuple.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\vbc.exe
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\vbc.exe.config
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\vbc.rsp
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\VBCSCompiler.exe
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Antlr3.Runtime.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\DocumentFormat.OpenXml.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\EntityFramework.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\EntityFramework.SqlServer.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Newtonsoft.Json.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\SpreadsheetLight.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Stripe.net.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Drawing.Common.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.IO.Packaging.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Helpers.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Mvc.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Optimization.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Razor.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.Razor.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\WebGrease.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\DocumentFormat.OpenXml.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\EntityFramework.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\EntityFramework.SqlServer.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.pdb
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.pdb
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\ExcelDataReader.DataSet.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\SpreadsheetLight.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Stripe.net.pdb
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Stripe.net.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.IO.Packaging.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Helpers.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Mvc.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Optimization.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.Razor.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\System.Web.WebPages.Razor.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Newtonsoft.Json.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Antlr3.Runtime.pdb
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.Razor.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\obj\Debug\kielb.csprojAssemblyReference.cache
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\obj\Debug\kielb.csproj.CoreCompileInputs.cache
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\obj\Debug\kielb.csproj.CopyComplete
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\obj\Debug\kielb.dll
+C:\Users\altorres\Documents\GitHub\KielsaBono-main\kielb\obj\Debug\kielb.pdb

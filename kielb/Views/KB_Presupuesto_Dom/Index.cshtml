@@ -1,0 +1,97 @@
+﻿@model IEnumerable<kielb.Models.KB_Presupuesto_Dom>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<link href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<head>
+    <title>Busqueda</title>
+</head>
+
+<form action="buscador" method="Post">
+
+    <p align="center">
+        <font face="Tahoma" size="2"><b><i>Ingrese el codigo de empleado a buscar</i></b></font>
+    </p>
+    <p align="center">
+        <input type="text" name="palabra" size="20">
+    </p>
+    <p align="center">
+        <input type="submit" value="Buscar" name="boton1">
+        <input type="reset" value="Restablecer" name="boton">
+
+</form>
+<p> </p>
+
+
+
+
+
+
+
+    <p>
+        @Html.ActionLink("Crear nuevo", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Empleado_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Monto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mes)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Año)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.checklist)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Empleado_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Monto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Año)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.checklist)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <script type="text/javascript">
+        //Para llenar los select
+        $.getJSON('/BonificacionPenalizacion/GetMeses', function (data) {
+            $.each(data, function () {
+                $('#Mes_ID').append('<option value=' +
+                    this.Value + '>' + this.Text + '</option>');
+            });
+        });
+
+    </script>

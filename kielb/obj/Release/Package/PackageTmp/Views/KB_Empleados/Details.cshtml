@@ -1,0 +1,58 @@
+﻿@model kielb.Models.KB_Empleados
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KB_Empleados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Suc_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suc_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supervisor_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supervisor_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

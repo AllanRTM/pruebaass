@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SITEPLUSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Calculo_Bono' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Calculo_Bono">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="comision" Type="money" />
+    <Property Name="cuadroA" Type="money" />
+    <Property Name="cuadroB" Type="money" />
+    <Property Name="cuadroC" Type="money" />
+    <Property Name="consumo" Type="money" />
+    <Property Name="canje" Type="money" />
+    <Property Name="checklist" Type="money" />
+    <Property Name="faltInv" Type="money" />
+    <Property Name="FaltCaja" Type="money" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="empleado_id" Type="varchar" MaxLength="25" />
+    <Property Name="puesto" Type="varchar" MaxLength="250" />
+    <Property Name="suc_id" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CalculoBono' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CalculoBono">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="suc_id" Type="int" />
+    <Property Name="puesto" Type="int" />
+    <Property Name="vendedor_id" Type="int" />
+    <Property Name="monto_bono" Type="money" />
+    <Property Name="falt_inv" Type="money" />
+    <Property Name="falt_caja" Type="money" />
+    <Property Name="total_deduciones" Type="money" />
+    <Property Name="total_bono" Type="money" />
+    <Property Name="diferencia_N" Type="money" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CalculoFaltCaja' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CalculoFaltCaja">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vendedor_id" Type="int" />
+    <Property Name="cliente_id" Type="int" />
+    <Property Name="fecha_doc" Type="datetime" />
+    <Property Name="monto" Type="money" />
+    <Property Name="tipo_doc" Type="varchar" MaxLength="50" />
+    <Property Name="documento" Type="varchar" MaxLength="50" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CobroVendedor' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CobroVendedor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vendedor" Type="varchar" MaxLength="25" />
+    <Property Name="Mov_id" Type="int" />
+    <Property Name="monto" Type="money" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CuadroFaltINV' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CuadroFaltINV">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="suc_id" Type="int" />
+    <Property Name="bodega_id" Type="int" />
+    <Property Name="fecha_apertura" Type="datetime" />
+    <Property Name="fecha_aplicacion" Type="datetime" />
+    <Property Name="estado" Type="nchar" MaxLength="2" />
+    <Property Name="comentario" Type="varchar" MaxLength="250" />
+    <Property Name="id_mov" Type="int" />
+    <Property Name="Num_Mov" Type="int" />
+    <Property Name="aplica" Type="int" />
+    <Property Name="tipo_cobro" Type="int" />
+    <Property Name="tipo_faltante" Type="int" />
+    <Property Name="costo_total" Type="money" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Empleados' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Empleados">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Suc_id" Type="int" />
+    <Property Name="Empleado_id" Type="varchar" MaxLength="25" />
+    <Property Name="Mes" Type="int" />
+    <Property Name="Año" Type="int" />
+    <Property Name="tipo_id" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="KB_Mantenimiento_Perfiles_Y_Roles">
+    <Key>
+      <PropertyRef Name="Id_rol" />
+    </Key>
+    <Property Name="Id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Porcentajes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Porcentajes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cumplimiento" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="comision" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroA" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroB" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroC" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="consumo" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="checklist" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="mes" Type="int" />
+    <Property Name="año" Type="int" />
+    <Property Name="canje" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="suc_id" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Presupuesto_Dom' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Presupuesto_Dom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Empleado_id" Type="varchar" MaxLength="25" />
+    <Property Name="Monto" Type="money" />
+    <Property Name="Mes" Type="int" />
+    <Property Name="Año" Type="int" />
+    <Property Name="checklist" Type="decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Presupuesto_Far' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Presupuesto_Far">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Suc_id" Type="int" />
+    <Property Name="Monto" Type="money" />
+    <Property Name="Mes" Type="int" />
+    <Property Name="Año" Type="int" />
+    <Property Name="checklist" Type="decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_TipoEmpleados' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_TipoEmpleados">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="KB_UsuariosKielsaBonos">
+    <Key>
+      <PropertyRef Name="Empleado_id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Empleado_id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="150" />
+    <Property Name="Sucursal_id" Type="int" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="ID_Estado" Type="int" />
+    <Property Name="ID_Rol" Type="int" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="token_recovery" Type="nvarchar(max)" />
+    <Property Name="Emp_id" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_Anios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Anio" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_Estado_Uuarios">
+    <Key>
+      <PropertyRef Name="ID_Estado" />
+    </Key>
+    <Property Name="ID_Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="TBL_MESES">
+    <Key>
+      <PropertyRef Name="Id_num" />
+    </Key>
+    <Property Name="Id_num" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mes_ID" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Nombre_mes" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_ConsultaNotas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_ConsultaNotas">
+    <Key>
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="vendedor_nombre_completo" />
+      <PropertyRef Name="cliente" />
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="Monto" />
+      <PropertyRef Name="Nombre_Corto" />
+      <PropertyRef Name="Num_Nota" />
+      <PropertyRef Name="CtaContable" />
+      <PropertyRef Name="CentroCosto" />
+    </Key>
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="vendedor_nombre_completo" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="cliente" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Monto" Type="float" Nullable="false" />
+    <Property Name="Nombre_Corto" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Num_Nota" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CtaContable" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CentroCosto" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Consumo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Consumo">
+    <Key>
+      <PropertyRef Name="factura_id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Caja_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+    </Key>
+    <Property Name="factura_id" Type="int" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Caja_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_cuadro" Type="decimal" Precision="38" Scale="6" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CuadroBasicoA' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CuadroBasicoA">
+    <Key>
+      <PropertyRef Name="factura_id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Caja_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="factura_fecha" />
+    </Key>
+    <Property Name="factura_id" Type="int" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Caja_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_cuadro" Type="decimal" Precision="38" Scale="6" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="factura_fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CuadroBasicoB' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CuadroBasicoB">
+    <Key>
+      <PropertyRef Name="factura_id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Caja_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="factura_fecha" />
+    </Key>
+    <Property Name="factura_id" Type="int" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Caja_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_cuadro" Type="decimal" Precision="38" Scale="6" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="factura_fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_CuadroBasicoC' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_CuadroBasicoC">
+    <Key>
+      <PropertyRef Name="factura_id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Caja_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="factura_fecha" />
+    </Key>
+    <Property Name="factura_id" Type="int" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Caja_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_cuadro" Type="decimal" Precision="38" Scale="6" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="factura_fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_DatosUsuario' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_DatosUsuario">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Empleado_id" />
+      <PropertyRef Name="Emp_Nombre" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Empleado_id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="150" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="Emp_Nombre" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="Suc_Nombre" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="255" />
+    <Property Name="Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_Venta_total' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_Venta_total">
+    <Key>
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Caja_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="factura_fecha" />
+    </Key>
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Caja_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_cuadro" Type="money" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="factura_fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.KB_VentaNeta' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="KB_VentaNeta">
+    <Key>
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Factura_Fecha" />
+    </Key>
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="total_Venta" Type="decimal" Precision="22" Scale="6" />
+    <Property Name="Factura_Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_Empresas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_Empresas">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Emp_Nombre" />
+    </Key>
+    <Property Name="Emp_Id" Type="smallint" Nullable="false" />
+    <Property Name="Emp_Nombre" Type="varchar" MaxLength="120" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_KB_DatosUsuarios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_KB_DatosUsuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Empleado_id" />
+      <PropertyRef Name="Emp_Nombre" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Empleado_id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="150" />
+    <Property Name="Sucursal_id" Type="int" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="ID_Estado" Type="int" />
+    <Property Name="ID_Rol" Type="int" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="token_recovery" Type="nvarchar(max)" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="Emp_Nombre" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="Suc_Nombre" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="255" />
+    <Property Name="Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_KB_NombreFaltantes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_KB_NombreFaltantes">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Tipo_Id" />
+      <PropertyRef Name="Tipo_Nombre" />
+      <PropertyRef Name="Tipo_Estadistica" />
+      <PropertyRef Name="Tipo_Tipo_Movimiento" />
+      <PropertyRef Name="Tipo_InterBodega" />
+      <PropertyRef Name="Tipo_Suma_Inventario" />
+      <PropertyRef Name="Tipo_Fec_Actualizacion" />
+      <PropertyRef Name="Tipo_Mov_Merma" />
+    </Key>
+    <Property Name="Emp_Id" Type="smallint" Nullable="false" />
+    <Property Name="Tipo_Id" Type="smallint" Nullable="false" />
+    <Property Name="Tipo_Nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Tipo_Estadistica" Type="bit" Nullable="false" />
+    <Property Name="Tipo_Tipo_Movimiento" Type="smallint" Nullable="false" />
+    <Property Name="Tipo_InterBodega" Type="bit" Nullable="false" />
+    <Property Name="Tipo_Suma_Inventario" Type="bit" Nullable="false" />
+    <Property Name="Tipo_Fec_Actualizacion" Type="datetime" Nullable="false" />
+    <Property Name="Tipo_Mov_Merma" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_KB_perfilesKB' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_KB_perfilesKB">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Empleado_id" />
+      <PropertyRef Name="Emp_Nombre" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Empleado_id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="150" />
+    <Property Name="Sucursal_id" Type="int" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="ID_Estado" Type="int" />
+    <Property Name="ID_Rol" Type="int" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="token_recovery" Type="nvarchar(max)" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="Emp_Nombre" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="Suc_Nombre" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="255" />
+    <Property Name="Rol" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_KB_TipoFaltantes_X_Pais' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_KB_TipoFaltantes_X_Pais">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Bodega_Id" />
+      <PropertyRef Name="Mov_Id" />
+      <PropertyRef Name="Tipo_Id" />
+      <PropertyRef Name="Usuario_Id" />
+      <PropertyRef Name="Suc_Destino" />
+      <PropertyRef Name="Bodega_Destino" />
+      <PropertyRef Name="Mov_Tipo_Ajuste" />
+      <PropertyRef Name="Mov_Fecha" />
+      <PropertyRef Name="Mov_Fecha_Aplicado" />
+      <PropertyRef Name="Mov_Fecha_Anulado" />
+      <PropertyRef Name="Mov_Fecha_Despachado" />
+      <PropertyRef Name="Mov_Fecha_Impreso" />
+      <PropertyRef Name="Mov_Fecha_Ingreso" />
+      <PropertyRef Name="Mov_Fecha_Recibido" />
+      <PropertyRef Name="Mov_Subtotal" />
+      <PropertyRef Name="Mov_Total" />
+      <PropertyRef Name="Mov_Precio_Total" />
+      <PropertyRef Name="Mov_Comentario" />
+      <PropertyRef Name="Mov_Estado" />
+      <PropertyRef Name="Mov_Utilizado" />
+      <PropertyRef Name="Mov_Interbodega" />
+      <PropertyRef Name="Mov_Aplicar_Consignacion" />
+      <PropertyRef Name="Mov_Usuario_Aplica" />
+      <PropertyRef Name="Mov_Usuario_Anula" />
+      <PropertyRef Name="Mov_Usuario_Recibe" />
+      <PropertyRef Name="Mov_Subtotal_Dolar" />
+      <PropertyRef Name="Mov_Subtotal_Ant_Dolar" />
+      <PropertyRef Name="Asiento_id" />
+      <PropertyRef Name="Orden_Id" />
+      <PropertyRef Name="Asiento_Recibido_Id" />
+      <PropertyRef Name="Mov_Origen" />
+      <PropertyRef Name="Mov_Numero" />
+      <PropertyRef Name="Serie_id" />
+      <PropertyRef Name="Resolucion_id" />
+      <PropertyRef Name="Resolucion_Fecha" />
+      <PropertyRef Name="Resolucion_Doc_Inicio" />
+      <PropertyRef Name="Resolucion_Doc_Final" />
+      <PropertyRef Name="Resolucion_Tipo_Comprobante_FE" />
+      <PropertyRef Name="Resolucion_Fec_Vencimiento" />
+      <PropertyRef Name="Resolucion_Establecimiento" />
+      <PropertyRef Name="Resolucion_Punto_Emision" />
+    </Key>
+    <Property Name="Emp_Id" Type="smallint" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Bodega_Id" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Id" Type="int" Nullable="false" />
+    <Property Name="Tipo_Id" Type="smallint" Nullable="false" />
+    <Property Name="Usuario_Id" Type="smallint" Nullable="false" />
+    <Property Name="Suc_Destino" Type="smallint" Nullable="false" />
+    <Property Name="Bodega_Destino" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Tipo_Ajuste" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Aplicado" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Anulado" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Despachado" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Impreso" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Ingreso" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Fecha_Recibido" Type="datetime" Nullable="false" />
+    <Property Name="Mov_Subtotal" Type="money" Nullable="false" />
+    <Property Name="Mov_Total" Type="money" Nullable="false" />
+    <Property Name="Mov_Precio_Total" Type="money" Nullable="false" />
+    <Property Name="Mov_Comentario" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Mov_Estado" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Mov_Utilizado" Type="bit" Nullable="false" />
+    <Property Name="Mov_Interbodega" Type="bit" Nullable="false" />
+    <Property Name="Mov_Aplicar_Consignacion" Type="bit" Nullable="false" />
+    <Property Name="Mov_Usuario_Aplica" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Usuario_Anula" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Usuario_Recibe" Type="smallint" Nullable="false" />
+    <Property Name="Mov_Subtotal_Dolar" Type="money" Nullable="false" />
+    <Property Name="Mov_Subtotal_Ant_Dolar" Type="money" Nullable="false" />
+    <Property Name="Asiento_id" Type="int" Nullable="false" />
+    <Property Name="Orden_Id" Type="int" Nullable="false" />
+    <Property Name="Asiento_Recibido_Id" Type="int" Nullable="false" />
+    <Property Name="Mov_Origen" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Mov_Numero" Type="int" Nullable="false" />
+    <Property Name="Serie_id" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Resolucion_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Resolucion_Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Resolucion_Doc_Inicio" Type="int" Nullable="false" />
+    <Property Name="Resolucion_Doc_Final" Type="int" Nullable="false" />
+    <Property Name="Resolucion_Tipo_Comprobante_FE" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Resolucion_Fec_Vencimiento" Type="datetime" Nullable="false" />
+    <Property Name="Resolucion_Establecimiento" Type="smallint" Nullable="false" />
+    <Property Name="Resolucion_Punto_Emision" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_KB_Vendedores_x_pais' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_KB_Vendedores_x_pais">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Cadena_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="Vendedor_Nombre" />
+      <PropertyRef Name="Vendedor_Apellido1" />
+      <PropertyRef Name="Vendedor_Apellido2" />
+      <PropertyRef Name="Vendedor_Nombre_Completo" />
+      <PropertyRef Name="Vendedor_Fec_Actualizacion" />
+      <PropertyRef Name="Vendedor_Activo" />
+      <PropertyRef Name="Codigo_Interfaz" />
+      <PropertyRef Name="Suc_Id" />
+    </Key>
+    <Property Name="Emp_Id" Type="smallint" Nullable="false" />
+    <Property Name="Cadena_Id" Type="smallint" Nullable="false" />
+    <Property Name="Vendedor_Id" Type="int" Nullable="false" />
+    <Property Name="Vendedor_Nombre" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Vendedor_Apellido1" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Vendedor_Apellido2" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Vendedor_Nombre_Completo" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Vendedor_Fec_Actualizacion" Type="datetime" Nullable="false" />
+    <Property Name="Vendedor_Activo" Type="bit" Nullable="false" />
+    <Property Name="Codigo_Interfaz" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SITEPLUS.dbo.VSP_TR_SUCURSAL' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VSP_TR_SUCURSAL">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Emp_Id" Type="smallint" Nullable="false" />
+    <Property Name="Suc_Id" Type="smallint" Nullable="false" />
+    <Property Name="Suc_Nombre" Type="varchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SITEPLUSModelStoreContainer">
+    <EntitySet Name="KB_Mantenimiento_Perfiles_Y_Roles" EntityType="Self.KB_Mantenimiento_Perfiles_Y_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KB_UsuariosKielsaBonos" EntityType="Self.KB_UsuariosKielsaBonos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Anios" EntityType="Self.TBL_Anios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Estado_Uuarios" EntityType="Self.TBL_Estado_Uuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_MESES" EntityType="Self.TBL_MESES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KB_Calculo_Bono" EntityType="Self.KB_Calculo_Bono" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Calculo_Bono].[id] AS [id], 
+    [KB_Calculo_Bono].[comision] AS [comision], 
+    [KB_Calculo_Bono].[cuadroA] AS [cuadroA], 
+    [KB_Calculo_Bono].[cuadroB] AS [cuadroB], 
+    [KB_Calculo_Bono].[cuadroC] AS [cuadroC], 
+    [KB_Calculo_Bono].[consumo] AS [consumo], 
+    [KB_Calculo_Bono].[canje] AS [canje], 
+    [KB_Calculo_Bono].[checklist] AS [checklist], 
+    [KB_Calculo_Bono].[faltInv] AS [faltInv], 
+    [KB_Calculo_Bono].[FaltCaja] AS [FaltCaja], 
+    [KB_Calculo_Bono].[fecha] AS [fecha], 
+    [KB_Calculo_Bono].[empleado_id] AS [empleado_id], 
+    [KB_Calculo_Bono].[puesto] AS [puesto], 
+    [KB_Calculo_Bono].[suc_id] AS [suc_id], 
+    [KB_Calculo_Bono].[nombre] AS [nombre]
+    FROM [dbo].[KB_Calculo_Bono] AS [KB_Calculo_Bono]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CalculoBono" EntityType="Self.KB_CalculoBono" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CalculoBono].[id] AS [id], 
+    [KB_CalculoBono].[suc_id] AS [suc_id], 
+    [KB_CalculoBono].[puesto] AS [puesto], 
+    [KB_CalculoBono].[vendedor_id] AS [vendedor_id], 
+    [KB_CalculoBono].[monto_bono] AS [monto_bono], 
+    [KB_CalculoBono].[falt_inv] AS [falt_inv], 
+    [KB_CalculoBono].[falt_caja] AS [falt_caja], 
+    [KB_CalculoBono].[total_deduciones] AS [total_deduciones], 
+    [KB_CalculoBono].[total_bono] AS [total_bono], 
+    [KB_CalculoBono].[diferencia_N] AS [diferencia_N], 
+    [KB_CalculoBono].[fecha] AS [fecha]
+    FROM [dbo].[KB_CalculoBono] AS [KB_CalculoBono]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CalculoFaltCaja" EntityType="Self.KB_CalculoFaltCaja" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CalculoFaltCaja].[id] AS [id], 
+    [KB_CalculoFaltCaja].[vendedor_id] AS [vendedor_id], 
+    [KB_CalculoFaltCaja].[cliente_id] AS [cliente_id], 
+    [KB_CalculoFaltCaja].[fecha_doc] AS [fecha_doc], 
+    [KB_CalculoFaltCaja].[monto] AS [monto], 
+    [KB_CalculoFaltCaja].[tipo_doc] AS [tipo_doc], 
+    [KB_CalculoFaltCaja].[documento] AS [documento], 
+    [KB_CalculoFaltCaja].[fecha] AS [fecha]
+    FROM [dbo].[KB_CalculoFaltCaja] AS [KB_CalculoFaltCaja]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CobroVendedor" EntityType="Self.KB_CobroVendedor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CobroVendedor].[id] AS [id], 
+    [KB_CobroVendedor].[vendedor] AS [vendedor], 
+    [KB_CobroVendedor].[Mov_id] AS [Mov_id], 
+    [KB_CobroVendedor].[monto] AS [monto], 
+    [KB_CobroVendedor].[fecha] AS [fecha]
+    FROM [dbo].[KB_CobroVendedor] AS [KB_CobroVendedor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CuadroFaltINV" EntityType="Self.KB_CuadroFaltINV" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CuadroFaltINV].[id] AS [id], 
+    [KB_CuadroFaltINV].[suc_id] AS [suc_id], 
+    [KB_CuadroFaltINV].[bodega_id] AS [bodega_id], 
+    [KB_CuadroFaltINV].[fecha_apertura] AS [fecha_apertura], 
+    [KB_CuadroFaltINV].[fecha_aplicacion] AS [fecha_aplicacion], 
+    [KB_CuadroFaltINV].[estado] AS [estado], 
+    [KB_CuadroFaltINV].[comentario] AS [comentario], 
+    [KB_CuadroFaltINV].[id_mov] AS [id_mov], 
+    [KB_CuadroFaltINV].[Num_Mov] AS [Num_Mov], 
+    [KB_CuadroFaltINV].[aplica] AS [aplica], 
+    [KB_CuadroFaltINV].[tipo_cobro] AS [tipo_cobro], 
+    [KB_CuadroFaltINV].[tipo_faltante] AS [tipo_faltante], 
+    [KB_CuadroFaltINV].[costo_total] AS [costo_total]
+    FROM [dbo].[KB_CuadroFaltINV] AS [KB_CuadroFaltINV]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Empleados" EntityType="Self.KB_Empleados" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Empleados].[Id] AS [Id], 
+    [KB_Empleados].[Suc_id] AS [Suc_id], 
+    [KB_Empleados].[Empleado_id] AS [Empleado_id], 
+    [KB_Empleados].[Mes] AS [Mes], 
+    [KB_Empleados].[Año] AS [Año], 
+    [KB_Empleados].[tipo_id] AS [tipo_id], 
+    [KB_Empleados].[status] AS [status]
+    FROM [dbo].[KB_Empleados] AS [KB_Empleados]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Porcentajes" EntityType="Self.KB_Porcentajes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Porcentajes].[id] AS [id], 
+    [KB_Porcentajes].[cumplimiento] AS [cumplimiento], 
+    [KB_Porcentajes].[comision] AS [comision], 
+    [KB_Porcentajes].[cuadroA] AS [cuadroA], 
+    [KB_Porcentajes].[cuadroB] AS [cuadroB], 
+    [KB_Porcentajes].[cuadroC] AS [cuadroC], 
+    [KB_Porcentajes].[consumo] AS [consumo], 
+    [KB_Porcentajes].[checklist] AS [checklist], 
+    [KB_Porcentajes].[mes] AS [mes], 
+    [KB_Porcentajes].[año] AS [año], 
+    [KB_Porcentajes].[canje] AS [canje], 
+    [KB_Porcentajes].[suc_id] AS [suc_id]
+    FROM [dbo].[KB_Porcentajes] AS [KB_Porcentajes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Presupuesto_Dom" EntityType="Self.KB_Presupuesto_Dom" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Presupuesto_Dom].[Id] AS [Id], 
+    [KB_Presupuesto_Dom].[Empleado_id] AS [Empleado_id], 
+    [KB_Presupuesto_Dom].[Monto] AS [Monto], 
+    [KB_Presupuesto_Dom].[Mes] AS [Mes], 
+    [KB_Presupuesto_Dom].[Año] AS [Año], 
+    [KB_Presupuesto_Dom].[checklist] AS [checklist]
+    FROM [dbo].[KB_Presupuesto_Dom] AS [KB_Presupuesto_Dom]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Presupuesto_Far" EntityType="Self.KB_Presupuesto_Far" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Presupuesto_Far].[Id] AS [Id], 
+    [KB_Presupuesto_Far].[Suc_id] AS [Suc_id], 
+    [KB_Presupuesto_Far].[Monto] AS [Monto], 
+    [KB_Presupuesto_Far].[Mes] AS [Mes], 
+    [KB_Presupuesto_Far].[Año] AS [Año], 
+    [KB_Presupuesto_Far].[checklist] AS [checklist]
+    FROM [dbo].[KB_Presupuesto_Far] AS [KB_Presupuesto_Far]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_TipoEmpleados" EntityType="Self.KB_TipoEmpleados" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_TipoEmpleados].[Id] AS [Id], 
+    [KB_TipoEmpleados].[descripcion] AS [descripcion]
+    FROM [dbo].[KB_TipoEmpleados] AS [KB_TipoEmpleados]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_ConsultaNotas" EntityType="Self.KB_ConsultaNotas" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_ConsultaNotas].[Vendedor_Id] AS [Vendedor_Id], 
+    [KB_ConsultaNotas].[vendedor_nombre_completo] AS [vendedor_nombre_completo], 
+    [KB_ConsultaNotas].[cliente] AS [cliente], 
+    [KB_ConsultaNotas].[Fecha] AS [Fecha], 
+    [KB_ConsultaNotas].[Monto] AS [Monto], 
+    [KB_ConsultaNotas].[Nombre_Corto] AS [Nombre_Corto], 
+    [KB_ConsultaNotas].[Num_Nota] AS [Num_Nota], 
+    [KB_ConsultaNotas].[CtaContable] AS [CtaContable], 
+    [KB_ConsultaNotas].[CentroCosto] AS [CentroCosto]
+    FROM [dbo].[KB_ConsultaNotas] AS [KB_ConsultaNotas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Consumo" EntityType="Self.KB_Consumo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Consumo].[factura_id] AS [factura_id], 
+    [KB_Consumo].[Suc_Id] AS [Suc_Id], 
+    [KB_Consumo].[Caja_Id] AS [Caja_Id], 
+    [KB_Consumo].[total_cuadro] AS [total_cuadro], 
+    [KB_Consumo].[Vendedor_Id] AS [Vendedor_Id]
+    FROM [dbo].[KB_Consumo] AS [KB_Consumo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CuadroBasicoA" EntityType="Self.KB_CuadroBasicoA" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CuadroBasicoA].[factura_id] AS [factura_id], 
+    [KB_CuadroBasicoA].[Suc_Id] AS [Suc_Id], 
+    [KB_CuadroBasicoA].[Caja_Id] AS [Caja_Id], 
+    [KB_CuadroBasicoA].[total_cuadro] AS [total_cuadro], 
+    [KB_CuadroBasicoA].[Vendedor_Id] AS [Vendedor_Id], 
+    [KB_CuadroBasicoA].[factura_fecha] AS [factura_fecha]
+    FROM [dbo].[KB_CuadroBasicoA] AS [KB_CuadroBasicoA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CuadroBasicoB" EntityType="Self.KB_CuadroBasicoB" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CuadroBasicoB].[factura_id] AS [factura_id], 
+    [KB_CuadroBasicoB].[Suc_Id] AS [Suc_Id], 
+    [KB_CuadroBasicoB].[Caja_Id] AS [Caja_Id], 
+    [KB_CuadroBasicoB].[total_cuadro] AS [total_cuadro], 
+    [KB_CuadroBasicoB].[Vendedor_Id] AS [Vendedor_Id], 
+    [KB_CuadroBasicoB].[factura_fecha] AS [factura_fecha]
+    FROM [dbo].[KB_CuadroBasicoB] AS [KB_CuadroBasicoB]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_CuadroBasicoC" EntityType="Self.KB_CuadroBasicoC" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_CuadroBasicoC].[factura_id] AS [factura_id], 
+    [KB_CuadroBasicoC].[Suc_Id] AS [Suc_Id], 
+    [KB_CuadroBasicoC].[Caja_Id] AS [Caja_Id], 
+    [KB_CuadroBasicoC].[total_cuadro] AS [total_cuadro], 
+    [KB_CuadroBasicoC].[Vendedor_Id] AS [Vendedor_Id], 
+    [KB_CuadroBasicoC].[factura_fecha] AS [factura_fecha]
+    FROM [dbo].[KB_CuadroBasicoC] AS [KB_CuadroBasicoC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_DatosUsuario" EntityType="Self.KB_DatosUsuario" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_DatosUsuario].[Id] AS [Id], 
+    [KB_DatosUsuario].[Empleado_id] AS [Empleado_id], 
+    [KB_DatosUsuario].[Nombre] AS [Nombre], 
+    [KB_DatosUsuario].[email] AS [email], 
+    [KB_DatosUsuario].[pass] AS [pass], 
+    [KB_DatosUsuario].[Emp_Nombre] AS [Emp_Nombre], 
+    [KB_DatosUsuario].[Suc_Nombre] AS [Suc_Nombre], 
+    [KB_DatosUsuario].[Estado] AS [Estado], 
+    [KB_DatosUsuario].[Rol] AS [Rol]
+    FROM [dbo].[KB_DatosUsuario] AS [KB_DatosUsuario]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_Venta_total" EntityType="Self.KB_Venta_total" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_Venta_total].[Suc_Id] AS [Suc_Id], 
+    [KB_Venta_total].[Caja_Id] AS [Caja_Id], 
+    [KB_Venta_total].[total_cuadro] AS [total_cuadro], 
+    [KB_Venta_total].[Vendedor_Id] AS [Vendedor_Id], 
+    [KB_Venta_total].[factura_fecha] AS [factura_fecha]
+    FROM [dbo].[KB_Venta_total] AS [KB_Venta_total]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="KB_VentaNeta" EntityType="Self.KB_VentaNeta" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KB_VentaNeta].[Suc_Id] AS [Suc_Id], 
+    [KB_VentaNeta].[total_Venta] AS [total_Venta], 
+    [KB_VentaNeta].[Factura_Fecha] AS [Factura_Fecha]
+    FROM [dbo].[KB_VentaNeta] AS [KB_VentaNeta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_Empresas" EntityType="Self.VSP_Empresas" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_Empresas].[Emp_Id] AS [Emp_Id], 
+    [VSP_Empresas].[Emp_Nombre] AS [Emp_Nombre]
+    FROM [dbo].[VSP_Empresas] AS [VSP_Empresas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_KB_DatosUsuarios" EntityType="Self.VSP_KB_DatosUsuarios" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_KB_DatosUsuarios].[Id] AS [Id], 
+    [VSP_KB_DatosUsuarios].[Empleado_id] AS [Empleado_id], 
+    [VSP_KB_DatosUsuarios].[Nombre] AS [Nombre], 
+    [VSP_KB_DatosUsuarios].[Sucursal_id] AS [Sucursal_id], 
+    [VSP_KB_DatosUsuarios].[pass] AS [pass], 
+    [VSP_KB_DatosUsuarios].[ID_Estado] AS [ID_Estado], 
+    [VSP_KB_DatosUsuarios].[ID_Rol] AS [ID_Rol], 
+    [VSP_KB_DatosUsuarios].[email] AS [email], 
+    [VSP_KB_DatosUsuarios].[token_recovery] AS [token_recovery], 
+    [VSP_KB_DatosUsuarios].[Emp_id] AS [Emp_id], 
+    [VSP_KB_DatosUsuarios].[Emp_Nombre] AS [Emp_Nombre], 
+    [VSP_KB_DatosUsuarios].[Suc_Nombre] AS [Suc_Nombre], 
+    [VSP_KB_DatosUsuarios].[Estado] AS [Estado], 
+    [VSP_KB_DatosUsuarios].[Rol] AS [Rol]
+    FROM [dbo].[VSP_KB_DatosUsuarios] AS [VSP_KB_DatosUsuarios]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_KB_NombreFaltantes" EntityType="Self.VSP_KB_NombreFaltantes" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_KB_NombreFaltantes].[Emp_Id] AS [Emp_Id], 
+    [VSP_KB_NombreFaltantes].[Tipo_Id] AS [Tipo_Id], 
+    [VSP_KB_NombreFaltantes].[Tipo_Nombre] AS [Tipo_Nombre], 
+    [VSP_KB_NombreFaltantes].[Tipo_Estadistica] AS [Tipo_Estadistica], 
+    [VSP_KB_NombreFaltantes].[Tipo_Tipo_Movimiento] AS [Tipo_Tipo_Movimiento], 
+    [VSP_KB_NombreFaltantes].[Tipo_InterBodega] AS [Tipo_InterBodega], 
+    [VSP_KB_NombreFaltantes].[Tipo_Suma_Inventario] AS [Tipo_Suma_Inventario], 
+    [VSP_KB_NombreFaltantes].[Tipo_Fec_Actualizacion] AS [Tipo_Fec_Actualizacion], 
+    [VSP_KB_NombreFaltantes].[Tipo_Mov_Merma] AS [Tipo_Mov_Merma]
+    FROM [dbo].[VSP_KB_NombreFaltantes] AS [VSP_KB_NombreFaltantes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_KB_perfilesKB" EntityType="Self.VSP_KB_perfilesKB" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_KB_perfilesKB].[Id] AS [Id], 
+    [VSP_KB_perfilesKB].[Empleado_id] AS [Empleado_id], 
+    [VSP_KB_perfilesKB].[Nombre] AS [Nombre], 
+    [VSP_KB_perfilesKB].[Sucursal_id] AS [Sucursal_id], 
+    [VSP_KB_perfilesKB].[pass] AS [pass], 
+    [VSP_KB_perfilesKB].[ID_Estado] AS [ID_Estado], 
+    [VSP_KB_perfilesKB].[ID_Rol] AS [ID_Rol], 
+    [VSP_KB_perfilesKB].[email] AS [email], 
+    [VSP_KB_perfilesKB].[token_recovery] AS [token_recovery], 
+    [VSP_KB_perfilesKB].[Emp_id] AS [Emp_id], 
+    [VSP_KB_perfilesKB].[Emp_Nombre] AS [Emp_Nombre], 
+    [VSP_KB_perfilesKB].[Suc_Nombre] AS [Suc_Nombre], 
+    [VSP_KB_perfilesKB].[Estado] AS [Estado], 
+    [VSP_KB_perfilesKB].[Rol] AS [Rol]
+    FROM [dbo].[VSP_KB_perfilesKB] AS [VSP_KB_perfilesKB]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_KB_TipoFaltantes_X_Pais" EntityType="Self.VSP_KB_TipoFaltantes_X_Pais" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_KB_TipoFaltantes_X_Pais].[Emp_Id] AS [Emp_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Suc_Id] AS [Suc_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Bodega_Id] AS [Bodega_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Id] AS [Mov_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Tipo_Id] AS [Tipo_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Usuario_Id] AS [Usuario_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Suc_Destino] AS [Suc_Destino], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Bodega_Destino] AS [Bodega_Destino], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Tipo_Ajuste] AS [Mov_Tipo_Ajuste], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha] AS [Mov_Fecha], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Aplicado] AS [Mov_Fecha_Aplicado], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Anulado] AS [Mov_Fecha_Anulado], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Despachado] AS [Mov_Fecha_Despachado], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Impreso] AS [Mov_Fecha_Impreso], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Ingreso] AS [Mov_Fecha_Ingreso], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Fecha_Recibido] AS [Mov_Fecha_Recibido], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Subtotal] AS [Mov_Subtotal], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Total] AS [Mov_Total], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Precio_Total] AS [Mov_Precio_Total], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Comentario] AS [Mov_Comentario], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Estado] AS [Mov_Estado], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Utilizado] AS [Mov_Utilizado], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Interbodega] AS [Mov_Interbodega], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Aplicar_Consignacion] AS [Mov_Aplicar_Consignacion], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Usuario_Aplica] AS [Mov_Usuario_Aplica], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Usuario_Anula] AS [Mov_Usuario_Anula], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Usuario_Recibe] AS [Mov_Usuario_Recibe], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Subtotal_Dolar] AS [Mov_Subtotal_Dolar], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Subtotal_Ant_Dolar] AS [Mov_Subtotal_Ant_Dolar], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Asiento_id] AS [Asiento_id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Orden_Id] AS [Orden_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Asiento_Recibido_Id] AS [Asiento_Recibido_Id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Origen] AS [Mov_Origen], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Mov_Numero] AS [Mov_Numero], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Serie_id] AS [Serie_id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_id] AS [Resolucion_id], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Fecha] AS [Resolucion_Fecha], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Doc_Inicio] AS [Resolucion_Doc_Inicio], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Doc_Final] AS [Resolucion_Doc_Final], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Tipo_Comprobante_FE] AS [Resolucion_Tipo_Comprobante_FE], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Fec_Vencimiento] AS [Resolucion_Fec_Vencimiento], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Establecimiento] AS [Resolucion_Establecimiento], 
+    [VSP_KB_TipoFaltantes_X_Pais].[Resolucion_Punto_Emision] AS [Resolucion_Punto_Emision]
+    FROM [dbo].[VSP_KB_TipoFaltantes_X_Pais] AS [VSP_KB_TipoFaltantes_X_Pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_KB_Vendedores_x_pais" EntityType="Self.VSP_KB_Vendedores_x_pais" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_KB_Vendedores_x_pais].[Emp_Id] AS [Emp_Id], 
+    [VSP_KB_Vendedores_x_pais].[Cadena_Id] AS [Cadena_Id], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Id] AS [Vendedor_Id], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Nombre] AS [Vendedor_Nombre], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Apellido1] AS [Vendedor_Apellido1], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Apellido2] AS [Vendedor_Apellido2], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Nombre_Completo] AS [Vendedor_Nombre_Completo], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Fec_Actualizacion] AS [Vendedor_Fec_Actualizacion], 
+    [VSP_KB_Vendedores_x_pais].[Vendedor_Activo] AS [Vendedor_Activo], 
+    [VSP_KB_Vendedores_x_pais].[Codigo_Interfaz] AS [Codigo_Interfaz], 
+    [VSP_KB_Vendedores_x_pais].[Suc_Id] AS [Suc_Id]
+    FROM [dbo].[VSP_KB_Vendedores_x_pais] AS [VSP_KB_Vendedores_x_pais]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VSP_TR_SUCURSAL" EntityType="Self.VSP_TR_SUCURSAL" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VSP_TR_SUCURSAL].[Emp_Id] AS [Emp_Id], 
+    [VSP_TR_SUCURSAL].[Suc_Id] AS [Suc_Id], 
+    [VSP_TR_SUCURSAL].[Suc_Nombre] AS [Suc_Nombre]
+    FROM [dbo].[VSP_TR_SUCURSAL] AS [VSP_TR_SUCURSAL]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

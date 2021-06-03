@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.MSG = "Revisión de cálculos-auditor";
+}
+<h3>@ViewBag.MSG</h3>
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="@Url.Action("CalculoVAC_Auditor", "BonificacionPenalizacion")">
+                    <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Asesor de Ventas-Cajero-Agente</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="@Url.Action("CalculoJF_turno_Coord_1_2_Auditor", "BonificacionPenalizacion")">
+                    <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Jefe de Farmacia-turno-Coordinador 1 y 2</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="@Url.Action("CalculoSup_Farm_Auditor", "BonificacionPenalizacion")">
+                    <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Supervisor de Farmacia</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="@Url.Action("CalculoOp_call_center_Auditor", "BonificacionPenalizacion")">
+                    <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Operador de call center</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="@Url.Action("CalculoSup_call_center_Auditor", "BonificacionPenalizacion")">
+                    <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Supervisor de call center</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    @*<div class="row mb-3">
+
+        <div class="col-md-6">
+                <div class="card">
+                    <a href="@Url.Action("Index", "BonificacionPenalizacion")">
+                        <img src="@Url.Content("~/Images/403.png")" style="height:18rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Cálculo de faltantes de inventario</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>*@
+</div>

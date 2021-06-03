@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SITEPLUSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="KB_Empleados">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Suc_id" Type="Int32" />
+    <Property Name="Empleado_id" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Supervisor_id" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Mes" Type="Int32" />
+    <Property Name="Año" Type="Int32" />
+    <Property Name="tipo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="KB_Porcentajes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cumplimiento" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="comision" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroA" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroB" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="cuadroC" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="consumo" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="checklist" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="mes" Type="Int32" />
+    <Property Name="año" Type="Int32" />
+  </EntityType>
+  <EntityType Name="KB_Presupuesto_Dom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empleado_id" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Monto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Mes" Type="Int32" />
+    <Property Name="Año" Type="Int32" />
+    <Property Name="checklist" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="KB_Presupuesto_Far">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Suc_id" Type="Int32" />
+    <Property Name="Monto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Mes" Type="Int32" />
+    <Property Name="Año" Type="Int32" />
+    <Property Name="checklist" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityContainer Name="SITEPLUSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KB_Empleados" EntityType="Self.KB_Empleados" />
+    <EntitySet Name="KB_Porcentajes" EntityType="Self.KB_Porcentajes" />
+    <EntitySet Name="KB_Presupuesto_Dom" EntityType="Self.KB_Presupuesto_Dom" />
+    <EntitySet Name="KB_Presupuesto_Far" EntityType="Self.KB_Presupuesto_Far" />
+    <EntitySet Name="KB_Mantenimiento_Perfiles_Y_Roles" EntityType="SITEPLUSModel.KB_Mantenimiento_Perfiles_Y_Roles" />
+    <EntitySet Name="KB_UsuariosKielsaBonos" EntityType="SITEPLUSModel.KB_UsuariosKielsaBonos" />
+    <EntitySet Name="TBL_Estado_Uuarios" EntityType="SITEPLUSModel.TBL_Estado_Uuarios" />
+    <EntitySet Name="VSP_Empresas" EntityType="SITEPLUSModel.VSP_Empresas" />
+    <EntitySet Name="VSP_TR_SUCURSAL" EntityType="SITEPLUSModel.VSP_TR_SUCURSAL" />
+    <EntitySet Name="TBL_Anios" EntityType="SITEPLUSModel.TBL_Anios" />
+    <EntitySet Name="TBL_MESES" EntityType="SITEPLUSModel.TBL_MESES" />
+    <EntitySet Name="VSP_KB_Vendedores_x_pais" EntityType="SITEPLUSModel.VSP_KB_Vendedores_x_pais" />
+    <EntitySet Name="KB_CalculoBono" EntityType="SITEPLUSModel.KB_CalculoBono" />
+    <EntitySet Name="KB_CobroVendedor" EntityType="SITEPLUSModel.KB_CobroVendedor" />
+    <EntitySet Name="KB_CuadroFaltINV" EntityType="SITEPLUSModel.KB_CuadroFaltINV" />
+    <EntitySet Name="VSP_KB_DatosUsuarios" EntityType="SITEPLUSModel.VSP_KB_DatosUsuarios" />
+  </EntityContainer>
+  <EntityType Name="KB_Mantenimiento_Perfiles_Y_Roles">
+    <Key>
+      <PropertyRef Name="Id_rol" />
+    </Key>
+    <Property Name="Id_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="KB_UsuariosKielsaBonos">
+    <Key>
+      <PropertyRef Name="Empleado_id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empleado_id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Sucursal_id" Type="Int32" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Estado" Type="Int32" />
+    <Property Name="ID_Rol" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="token_recovery" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_Estado_Uuarios">
+    <Key>
+      <PropertyRef Name="ID_Estado" />
+    </Key>
+    <Property Name="ID_Estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VSP_Empresas">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Emp_Nombre" />
+    </Key>
+    <Property Name="Emp_Id" Type="Int16" Nullable="false" />
+    <Property Name="Emp_Nombre" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VSP_TR_SUCURSAL">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Suc_Id" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Emp_Id" Type="Int16" Nullable="false" />
+    <Property Name="Suc_Id" Type="Int16" Nullable="false" />
+    <Property Name="Suc_Nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Anios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Anio" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_MESES">
+    <Key>
+      <PropertyRef Name="Id_num" />
+    </Key>
+    <Property Name="Id_num" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mes_ID" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_mes" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VSP_KB_Vendedores_x_pais">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+      <PropertyRef Name="Cadena_Id" />
+      <PropertyRef Name="Vendedor_Id" />
+      <PropertyRef Name="Vendedor_Nombre" />
+      <PropertyRef Name="Vendedor_Apellido1" />
+      <PropertyRef Name="Vendedor_Apellido2" />
+      <PropertyRef Name="Vendedor_Nombre_Completo" />
+      <PropertyRef Name="Vendedor_Fec_Actualizacion" />
+      <PropertyRef Name="Vendedor_Activo" />
+      <PropertyRef Name="Codigo_Interfaz" />
+      <PropertyRef Name="Suc_Id" />
+    </Key>
+    <Property Name="Emp_Id" Type="Int16" Nullable="false" />
+    <Property Name="Cadena_Id" Type="Int16" Nullable="false" />
+    <Property Name="Vendedor_Id" Type="Int32" Nullable="false" />
+    <Property Name="Vendedor_Nombre" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Vendedor_Apellido1" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Vendedor_Apellido2" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Vendedor_Nombre_Completo" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Vendedor_Fec_Actualizacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Vendedor_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Codigo_Interfaz" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Suc_Id" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KB_CalculoBono">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="suc_id" Type="Int32" />
+    <Property Name="puesto" Type="Int32" />
+    <Property Name="vendedor_id" Type="Int32" />
+    <Property Name="monto_bono" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="falt_inv" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="falt_caja" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="total_deduciones" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="total_bono" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="diferencia_N" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="KB_CobroVendedor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vendedor" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Mov_id" Type="Int32" />
+    <Property Name="monto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="KB_CuadroFaltINV">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="suc_id" Type="Int32" />
+    <Property Name="bodega_id" Type="Int32" />
+    <Property Name="fecha_apertura" Type="DateTime" Precision="3" />
+    <Property Name="fecha_aplicacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="comentario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_mov" Type="Int32" />
+    <Property Name="Num_Mov" Type="Int32" />
+    <Property Name="aplica" Type="Int32" />
+    <Property Name="tipo_cobro" Type="Int32" />
+    <Property Name="tipo_faltante" Type="Int32" />
+    <Property Name="costo_total" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="VSP_KB_DatosUsuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Empleado_id" />
+      <PropertyRef Name="Emp_Nombre" />
+      <PropertyRef Name="Suc_Nombre" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Empleado_id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Sucursal_id" Type="Int32" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Estado" Type="Int32" />
+    <Property Name="ID_Rol" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="token_recovery" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_id" Type="Int32" />
+    <Property Name="Emp_Nombre" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Suc_Nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
